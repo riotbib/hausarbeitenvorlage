@@ -51,7 +51,7 @@
 </ul>
 <h1 id="generieren-eines-pdf">Generieren eines PDF</h1>
 <blockquote>
-<p><code>pandoc kapitel/*.md literaturverzeichnis.md -s -o hausarbeit.pdf --toc --toc-depth=2 --template=template.tex -V lang=de -V fontsize=12pt -V papersize=a4 -V geometry:&quot;top=2.5cm, bottom=2.5cm, left=2.5cm, right=3cm&quot; --pdf-engine=xelatex -V mainfont=&quot;Times New Roman&quot; --bibliography bibliografie.bib  --filter pandoc-citeproc</code></p>
+<p><code>pandoc kapitel/*.md dateien/literaturverzeichnis.md -s -o hausarbeit.pdf --toc --toc-depth=2 --template=template.tex -V lang=de -V fontsize=12pt -V papersize=a4 -V geometry:&quot;top=2.5cm, bottom=2.5cm, left=2.5cm, right=3cm&quot; --pdf-engine=xelatex -V mainfont=&quot;Times New Roman&quot; --bibliography bibliografie.bib  --filter pandoc-citeproc</code></p>
 </blockquote>
 </body>
 </html>
