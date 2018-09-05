@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hausarbeitenvorlage</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">hausarbeitenvorlage</h1>
+</header>
+<p><code>hausarbeitenvorlage</code> benötigt folgende Pakete:</p>
+<ul>
+<li><code>pandoc</code></li>
+<li><code>ttf-ms-fonts</code> für die propritäre Schrift <em>Times New Roman</em></li>
+</ul>
+<h1 id="vorgang">Vorgang</h1>
+<ol type="1">
+<li>Anzupassende Dateien anpassen.</li>
+<li>Kapitel in <code>kapitel/</code> als Markdown-Dateien schreiben. Markdown wird <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">auf pandoc.org</a> erklärt. Wie zu zitieren ist, wird ebenfalls <a href="https://pandoc.org/demo/CITATIONS">auf pandoc.org</a> erklärt.</li>
+<li>PDF generieren.</li>
+</ol>
+<h1 id="anzupassende-dateien">Anzupassende Dateien</h1>
+<ul>
+<li><code>dateien/deckblatt.tex</code>
+<ul>
+<li>Universität, Titel, Untertitel, Name, Matrikelnummer, Betreuer*in bitte eintragen. Datum wird automatisch generiert.</li>
+</ul></li>
+<li><code>dateien/eigenstaendigkeitserklaerung.tex</code>
+<ul>
+<li>Name eintragen.</li>
+</ul></li>
+<li><code>dateien/bibliografie.bib</code>
+<ul>
+<li>Alle verwendeten Quellen eintragen. Beispiel, wie dies zu erledigen ist kann <a href="https://pandoc.org/demo/biblio.bib">auf pandoc.org</a> eingesehen werden.</li>
+</ul></li>
+<li><code>dateien/literaturverzeichnisi.md</code>
+<ul>
+<li>Diese Datei ist nur anzupassend, wenn die Überschrift für das Literaturverzeichnis anders heißen soll.</li>
+</ul></li>
+</ul>
+<h1 id="generieren-eines-pdf">Generieren eines PDF</h1>
+<p><code>pandoc kapitel/*.md literaturverzeichnis.md -s -o hausarbeit.pdf --toc --toc-depth=2 --template=template.tex -V lang=de -V fontsize=12pt -V papersize=a4 -V geometry:&quot;top=2.5cm, bottom=2.5cm, left=2.5cm, right=3cm&quot; --pdf-engine=xelatex -V mainfont=&quot;Times New Roman&quot; --bibliography bibliografie.bib  --filter pandoc-citeproc</code></p>
+</body>
+</html>
