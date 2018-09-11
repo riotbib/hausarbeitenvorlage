@@ -24,7 +24,7 @@
 - `dateien/bibliografie.bib`
   - Alle verwendeten Quellen eintragen. Beispiel, wie dies zu erledigen ist kann [auf pandoc.org](https://pandoc.org/demo/biblio.bib) eingesehen werden.
 
-- `dateien/literaturverzeichnisi.md`
+- `dateien/literaturverzeichnis.md`
   - Diese Datei ist nur anzupassend, wenn die Überschrift für das Literaturverzeichnis anders heißen soll.
 
 ## Generieren eines PDF
