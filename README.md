@@ -8,9 +8,10 @@
 - `ttf-ms-fonts` für die propritäre Schrift *Times New Roman*
 
 ## Vorgang
-1. Anzupassende Dateien anpassen.
-2. Kapitel in `kapitel/` als Markdown-Dateien schreiben. Markdown wird [auf pandoc.org](https://pandoc.org/MANUAL.html#pandocs-markdown) erklärt.  Wie zu zitieren ist, wird ebenfalls [auf pandoc.org](https://pandoc.org/demo/CITATIONS) erklärt.
-3. PDF generieren.
+1. Repository clonen: `git clone https://github.com/riotbib/hausarbeitenvorlage.git`
+2. Anzupassende Dateien anpassen.
+3. Kapitel in `kapitel/` als Markdown-Dateien schreiben. Markdown wird [auf pandoc.org](https://pandoc.org/MANUAL.html#pandocs-markdown) erklärt.  Wie zu zitieren ist, wird ebenfalls [auf pandoc.org](https://pandoc.org/demo/CITATIONS) erklärt.
+4. PDF generieren.
 
 ## Anzupassende Dateien
 
