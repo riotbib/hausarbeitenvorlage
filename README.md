@@ -1,6 +1,6 @@
 # hausarbeitenvorlage
 
-`hausarbeitenvorlage` ermöglicht es, mittels `pandoc` mit Markdown-Dateien eine Hausarbeit zu schreiben. Die Vorgaben wie Seitenabstände, Schriftart oder Schriftgröße orientieren sich an [den Vorgaben des Studiengang Politikwissenschaft der Uni-Marburg](https://www.uni-marburg.de/fb03/politikwissenschaft/eipoe/mitarbeiterinnen/hinweise), können jedoch simpel angepasst werden.
+`hausarbeitenvorlage` ermöglicht es, mittels `pandoc` mit Markdown-Dateien eine Hausarbeit zu setzen. Die Vorgaben wie Seitenabstände, Schriftart oder Schriftgröße orientieren sich an [den Vorgaben des Studiengang Politikwissenschaft der Universität Marburg](https://www.uni-marburg.de/fb03/politikwissenschaft/eipoe/mitarbeiterinnen/hinweise), können jedoch simpel angepasst werden.
 
 `hausarbeitenvorlage` benötigt folgende Pakete:
 
